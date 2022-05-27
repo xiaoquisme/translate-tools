@@ -1,2 +1,3 @@
-# translate-tools
+= translate-tools(need development)
+
 a tools that can auto translate english to chinese use google api for markdown or asciidoctor files
