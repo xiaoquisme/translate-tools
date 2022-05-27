@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/xiaoquisme/translate-tools/issues"
   },
-  "homepage": "https://github.com/xiaoquisme/translate-tools#readme"
+  "homepage": "https://github.com/xiaoquisme/translate-tools#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
