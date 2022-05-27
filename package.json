@@ -1,0 +1,19 @@
+{
+  "name": "translate-tools",
+  "version": "1.0.0",
+  "description": "a tools that can auto translate english to chinese use google api for markdown or asciidoctor files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoquisme/translate-tools.git"
+  },
+  "author": "xiaoquisme",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/xiaoquisme/translate-tools/issues"
+  },
+  "homepage": "https://github.com/xiaoquisme/translate-tools#readme"
+}
