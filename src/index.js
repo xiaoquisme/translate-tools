@@ -5,18 +5,13 @@ const fileName = process.argv.slice(2);
 const translate = require("google-translate-api");
 
 
-translate("I can speak english.", { to: 'zh-CN' })
+translate("# I can speak english.", { to: 'zh-CN' })
     .then(res => {
-        console.log(res.text);
-        //=> Ik spreek Nederlands!
-        console.log(res.from.text.autoCorrected);
-        //=> true
-        console.log(res.from.text.value);
-        //=> I [speak] Dutch!
-        console.log(res.from.text.didYouMean);
+        return res.text;
     })
     .catch(e => {
         console.error(e);
-        process.exit(1);
+        return e;
     });
 
+module.exports = { translate }
