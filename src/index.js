@@ -1,17 +1,17 @@
-#!/usr/bin/env node
+const translate = require("./utils/translate");
 
-const fileName = process.argv.slice(2);
+function translateToCN(content) {
 
-const translate = require("google-translate-api");
+    return translate(content, { to: 'zh-CN' })
+        .then(res => {
+            return res.text;
+        })
+        .catch(e => {
+            console.error(e);
+            return e;
+        });
+}
 
 
-translate("# I can speak english.", { to: 'zh-CN' })
-    .then(res => {
-        return res.text;
-    })
-    .catch(e => {
-        console.error(e);
-        return e;
-    });
+module.exports = { translateToCN }
 
-module.exports = { translate }
